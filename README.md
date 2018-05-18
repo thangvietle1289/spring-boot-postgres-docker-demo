@@ -10,7 +10,7 @@
 `$ docker-compose up`
 
 ## 4. Test
-Navigation to [http://localhost:8080](http://localhost:8080) and show product list
+Navigation to [http://localhost:9001](http://localhost:9001) and show product list
 
 ## References:
 1. [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)

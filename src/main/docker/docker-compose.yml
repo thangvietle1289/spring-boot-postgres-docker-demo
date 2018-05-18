@@ -1,14 +1,16 @@
-version: '2'
+version: '3'
 services:
   spring-boot-postgres-docker-demo:
     image: spring-boot-postgres-docker-demo
     build: .
     ports:
-    - "8080:8080"
+    - "9001:9001"
     depends_on:
     - mypostgres
   mypostgres:
     image: postgres
+    volumes:
+    - data:/var/lib/postgresql/data
     ports:
     - "5432:5432"
     environment:
@@ -16,3 +18,7 @@ services:
     - POSTGRES_PASSWORD=${DATABASE_PASSWORD}
     - POSTGRES_DB=${DATABASE_NAME}
 
+volumes:
+  data:
+    external:
+      name: postgres_docker_db
