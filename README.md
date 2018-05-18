@@ -1,17 +1,16 @@
 # The application for spring boot + postgresdb + docker
 
-## Images
-1. [Openjdk image](https://hub.docker.com/_/openjdk/)
-2. [Postgres docker image](https://store.docker.com/images/postgres)
-
-## Build maven project
+## 1. Build project
 `$ mvn clean install -DskipTests`
 
-## Go to docker folder
+## 2. Go to docker folder
 `$ cd src/main/docker/`
 
-## Run docker compose
+## 3. Run docker-compose
 `$ docker-compose up`
+
+## 4. Test
+Navigation to [http://localhost:8080](http://localhost:8080) and show product list
 
 ## References:
 1. [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
