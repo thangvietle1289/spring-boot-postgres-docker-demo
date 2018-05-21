@@ -1,16 +1,19 @@
 # The application for spring boot + postgresdb + docker
 
-## 1. Build project
-`$ mvn clean install -DskipTests`
-
-## 2. Go to docker folder
-`$ cd src/main/docker/`
-
-## 3. Run docker-compose
+## Run docker application
 `$ docker-compose up`
 
-## 4. Test
-Navigation to [http://localhost:9001](http://localhost:9001) and show product list
+## OR Run local application 
+#### Please install postgres on your local machine and config user & pass connect to your postgres database on application.properties
+
+### 1. Build project
+`$ mvn clean install`
+
+### 2. Run application
+`$ mvn spring-boot:run`
+
+## Test
+Navigation to [http://localhost:9001](http://localhost:9001)
 
 ## References:
 1. [Markdown-Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
