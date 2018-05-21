@@ -3,9 +3,12 @@ services:
   spring-boot-postgres-docker-demo:
     image: spring-boot-postgres-docker-demo
     build: .
+    command: mvn spring-boot:run -Dspring.profiles.active=docker
+    volumes:
+    - .:/spring-boot-code
     ports:
     - "9001:9001"
-    depends_on:
+    links:
     - mypostgres
   mypostgres:
     image: postgres
